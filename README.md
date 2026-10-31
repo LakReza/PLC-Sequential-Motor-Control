@@ -65,6 +65,32 @@ The PLC program is organized into four networks:
 ### Network 4 – Simultaneous Operation Monitoring
 ![Network 4](Screenshots/Network-4.png)
 
+## Simulation Demo
+
+The following animation demonstrates the PLC program execution, including sequential motor startup, independent motor stop functionality, and timed protection logic.
+
+![PLC Simulation Demo](GIFs/PLC-Simulation.gif)
+
+## Simulation Test Cases
+
+The following test cases were performed to verify the PLC control logic in the simulation environment.
+
+| Test ID | Test Scenario | Expected Result |
+|---|---|---|
+| TC-01 | Activate the Start command | Motor M1 turns ON. |
+| TC-02 | Wait 6 seconds after M1 starts | Motor M2 turns ON. |
+| TC-03 | Wait another 10 seconds | Motor M3 turns ON. |
+| TC-04 | Press Stop M1 | Only M1 turns OFF. |
+| TC-05 | Press Stop M2 | Only M2 turns OFF. |
+| TC-06 | Press Stop M3 | Only M3 turns OFF. |
+| TC-07 | Keep M1 and M3 ON simultaneously for 10 seconds | Both M1 and M3 turn OFF and the alarm activates. |
+
+**Test Environment:** Siemens S7-300 / SIMATIC Manager STEP 7 V5.7
+
+**Test Method:** PLC simulation
+
+**Test Status:** All listed scenarios were tested successfully.
+
 ## Learning Objectives
 
 - Sequential motor control using PLC.
@@ -73,12 +99,6 @@ The PLC program is organized into four networks:
 - Monitoring simultaneous motor operation.
 - Alarm and protection logic.
 - Siemens S7-300 programming using LAD.
-
-## Simulation Demo
-
-The following animation demonstrates the PLC program execution, including sequential motor startup, independent motor stop functionality, and timed protection logic.
-
-![PLC Simulation Demo](GIFs/PLC-Simulation.gif)
 
 ## Project Status
 
