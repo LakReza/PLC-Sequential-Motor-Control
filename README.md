@@ -74,6 +74,12 @@ The PLC program is organized into four networks:
 - Alarm and protection logic.
 - Siemens S7-300 programming using LAD.
 
+## Simulation Demo
+
+The following animation demonstrates the PLC program execution, including sequential motor startup, independent motor stop functionality, and timed protection logic.
+
+![PLC Simulation Demo](GIFs/PLC-Simulation.gif)
+
 ## Project Status
 
 Implemented and tested in a simulation environment.
