@@ -49,6 +49,21 @@ The control logic is developed using **SIMATIC Manager (STEP 7 V5.7)** for a **S
 
 - `PLC_Program.pdf` – Exported PLC program and LAD networks.
 - `Screenshots/` – Program and simulation screenshots.
+## Ladder Logic (LAD) Networks
+
+The PLC program is organized into four networks:
+
+### Network 1 – Motor M1 Control
+![Network 1](Screenshots/Network-1.png)
+
+### Network 2 – Motor M2 Delayed Start
+![Network 2](Screenshots/Network-2.png)
+
+### Network 3 – Motor M3 Delayed Start
+![Network 3](Screenshots/Network-3.png)
+
+### Network 4 – Simultaneous Operation Monitoring
+![Network 4](Screenshots/Network-4.png)
 
 ## Learning Objectives
 
